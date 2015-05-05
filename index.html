@@ -1,0 +1,66 @@
+<html ng-app="myApp">
+
+<head>
+
+	<title>Creative review vote</title>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="user-scalable=no,initial-scale = 1.0,maximum-scale = 1.0">
+    <link rel="stylesheet" type="text/css" href="css/topcoat-mobile-dark.css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body ng-controller="MainController">
+
+
+<div id= "site">
+
+	<article id= "range" class ="component centerText">
+		<div class="headlines sm">Are you entertained?</div> <br>
+	
+		<section ng-hide="hideRange" class="component">
+			<input type="range" min="-100" max="100" value="rangevalue" class="topcoat-range" ng-model="range" ng-change="update(range)">
+			<div> {{sliderValue}} </div>
+		</section>
+		
+		<!-- <section class="component postoCenter">
+			
+			<div class="topcoat-button-bar"> 
+				<div class="topcoat-button-bar__item"> 
+					<button class="topcoat-button--large--cta" ng-click="start"> Start </button>
+				</div>
+			</div>
+		</section> -->
+		
+		
+	</article>
+
+</div>
+
+
+<!-- Firebase -->
+<script src="https://cdn.firebase.com/js/client/1.0.15/firebase.js"></script>
+<!-- AngularJS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script>
+<!-- AngularFire Library -->
+<script src="https://cdn.firebase.com/libs/angularfire/0.7.1/angularfire.min.js"></script>
+<script src="lib/ng-fire-alarm.min.js"></script>
+
+<script src="lib/window_event_broadcasts.min.js"></script>
+<script src="lib/angular-touch.js"></script>
+<script src="app/app.js"></script>
+
+
+<script>
+//var video = document.getElementById("bgvideo");
+//video.addEventListener('touchstart', function(e) {
+//e.preventDefault();
+//video.play();
+//}
+</script>
+
+</body>
+
+</html>
